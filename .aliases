@@ -9,7 +9,7 @@ alias cmg='cd webapps/cmg && ls'
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alisas update='sudo softwareupdate -i -a;'
+alias update='sudo softwareupdate -i -a;'
 alias brewup='brew update; brew upgrade; brew cleanup;'
 alias gemup='sudo gem update --system; sudo gem update; sudo gem cleanup;'
 
