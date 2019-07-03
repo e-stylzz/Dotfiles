@@ -9,7 +9,7 @@ echo "Setting up Dotfiles..."
 if [[ "$arg" == "-i" || "$arg" == "--install" ]]; then
     
     echo "Installing Oh-My-Zsh..."
-    #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
     echo "Installing Powerline fonts"
     git clone https://github.com/powerline/fonts.git --depth=1
@@ -32,15 +32,15 @@ if [[ "$arg" == "-i" || "$arg" == "--install" ]]; then
 fi
 
 echo "Backing up old files..."
-# mv -iv ~/.zshrc ~/.zshrc.old
-# mv -iv ~/.hyper.js ~/.hyper.js.old
-# mv -iv ~/.gitconfig ~/.gitconfig.old
-# mv -iv ~/.aliases ~/.aliases.old
+mv -iv ~/.zshrc ~/.zshrc.old
+mv -iv ~/.hyper.js ~/.hyper.js.old
+mv -iv ~/.gitconfig ~/.gitconfig.old
+mv -iv ~/.aliases ~/.aliases.old
 
 echo "Adding symlinks..."
-# ln -sv $CWD/.zshrc ~/.zshrc
-# ln -sv $CWD/.hyper.js ~/.hyper.js
-# ln -sv $CWD/.gitconfig ~/.gitconfig
-# ln -sv $CWD/.aliases ~/.aliases
+ln -sv $CWD/.zshrc ~/.zshrc
+ln -sv $CWD/.hyper.js ~/.hyper.js
+ln -sv $CWD/.gitconfig ~/.gitconfig
+ln -sv $CWD/.aliases ~/.aliases
 
 echo "Done"
