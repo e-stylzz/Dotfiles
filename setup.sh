@@ -26,8 +26,8 @@ if [[ "$arg" == "-i" || "$arg" == "--install" ]]; then
     cd $CWD
 
     echo "Installig Bullet Train theme..."
-    cd ~/.oh-my-zsh/custom/themes
-    curl --remote-file https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
+    cd ~/.oh-my-zsh/themes
+    curl --remote-name https://raw.githubusercontent.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
     cd $CWD
 fi
 
