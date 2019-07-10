@@ -1,43 +1,19 @@
 module.exports = {
   config: {
-    // default font size in pixels for all tabs
     fontSize: 13,
-
-    // font family with optional fallbacks
     fontFamily:
       '"Fira Code", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
-
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    //cursorColor: 'rgba(248,28,229,0.75)',
-    cursorColor: "#add877",
-
-    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: "BLOCK",
-
-    // color of the text
+    //cursorColor: "#add877",
+    cursorColor: "red",
+    cursorShape: "UNDERLINE", // [BEAM, UNDERLINE, BLOCK]
     foregroundColor: "#fff",
-    //foregroundColor: '#c4e2f2',
-
-    // terminal background color
-    backgroundColor: "blue",
-    //backgroundColor: '#002b36',
-
-    // border color (window, tabs)
-    //borderColor: '#333',
+    backgroundColor: '#002b36',
     borderColor: "#335E69",
 
     // custom css to embed in the main window
-    css: `
-        .active_1gcgehd:before {
-          border: 1px solid #002b36 !important;
-        }      
-      `,
-
+    // css: ``
     // custom css to embed in the terminal window
-    // termCSS: `
-    //       x-screen x-row { font-variant-ligatures: contextual; }
-    //       x-row > span { line-height: 1.2em }
-    //     `,
+    // termCSS: ``
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: "12px 14px",
@@ -64,24 +40,18 @@ module.exports = {
       lightWhite: "#ffffff"
     },
 
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    shell: "/bin/zsh"
-
-    // for advanced config flags please refer to https://hyperterm.org/#cfg
+    shell: "/bin/zsh",
+    opacity: 0.9,
+  	hypercwd: {
+  		initialWorkingDirectory: '~/Projects',
+  	},
   },
-
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
-  //plugins: ['hyperterm-tabs','hyperborder'],
-  //plugins: ['hyperterm-mactabs'],
-
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
+  plugins: [
+  	'hyperterm-bold-tab', 
+  	'hyper-tabs-enhanced', 
+  	'hyper-opacity', 
+  	'hypercwd',
+  	'hyper-search'
+  ],
   localPlugins: []
 };
