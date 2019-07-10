@@ -51,11 +51,10 @@ BULLETTRAIN_NVM_FG="red"
 BULLETTRAIN_TIME_12HR="true"
 #https://github.com/caiogondim/bullet-train.zsh
 
-# Don't remember what this was for.
-###-tns-completion-start-###
-# if [ -f /Users/ericbarb/.tnsrc ]; then 
-#     source /Users/ericbarb/.tnsrc 
-# fi
-###-tns-completion-end-###
-
 source $HOME/.aliases
+
+###-tns-completion-start-###
+if [ -f /Users/stylzz/.tnsrc ]; then 
+    source /Users/stylzz/.tnsrc 
+fi
+###-tns-completion-end-###
