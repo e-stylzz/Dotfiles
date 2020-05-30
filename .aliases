@@ -3,7 +3,8 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # Dev stuff
 alias webapps='cd webapps && ls'
-alias cmg='cd webapps/cmg && ls'
+alias projects= 'cd Projects && ls'
+
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -26,3 +27,4 @@ alias server="python -m SimpleHTTPServer"
 
 alias home="cd ~"
 alias ls="ls -A"
+alias cls="clear"

@@ -11,6 +11,8 @@ export ZSH=$HOME/.oh-my-zsh
 # export PATH=$PATH:$ANDROID_HOME/tools
 # export PATH=$PATH:$ANDROID_HOME/tools/bin
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export ANDROID_HOME=/usr/local/share/android-sdk
 
 # Path for NPM - Reactive Native step
 # export PATH="/usr/local/share/npm/bin:$PATH"
