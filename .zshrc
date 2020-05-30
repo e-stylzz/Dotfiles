@@ -44,7 +44,7 @@ source $ZSH/oh-my-zsh.sh
 BULLETTRAIN_PROMPT_ORDER=(
   time
   dir
-  # nvm
+  nvm
   git
 )
 BULLETTRAIN_NVM_FG="red"
@@ -58,3 +58,12 @@ if [ -f /Users/stylzz/.tnsrc ]; then
     source /Users/stylzz/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+# dotnet tools / ef
+export PATH="$PATH:/Users/stylzz/.dotnet/tools"
+
+#nvm stuff
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  

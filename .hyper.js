@@ -42,16 +42,11 @@ module.exports = {
 
     shell: "/bin/zsh",
     opacity: 0.9,
-  	hypercwd: {
-  		initialWorkingDirectory: '~/Projects',
-  	},
   },
   plugins: [
   	'hyperterm-bold-tab', 
   	'hyper-tabs-enhanced', 
-  	'hyper-opacity', 
-  	'hypercwd',
-  	'hyper-search'
+  	'hyper-opacity'
   ],
   localPlugins: []
 };
