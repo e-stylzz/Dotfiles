@@ -46,14 +46,11 @@ module.exports = {
         trafficButtons: true,
       }
   },
-  
-  
   plugins: [
   	'hyperterm-bold-tab', 
   	'hyper-tabs-enhanced', 
-  	'hyper-opacity', 
-   	'hypercwd',
-   	'hyper-search'
+  	'hyper-opacity' ,
+   	'hypercwd'
   ],
   localPlugins: []
 };

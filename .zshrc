@@ -17,7 +17,6 @@ export ANDROID_HOME=/usr/local/share/android-sdk
 #Flutter
 export PATH="$PATH:/usr/local/bin/flutter/flutter/bin"
 
-
 # Path for NPM - Reactive Native step
 # export PATH="/usr/local/share/npm/bin:$PATH"
 
@@ -50,7 +49,7 @@ source $ZSH/oh-my-zsh.sh
 BULLETTRAIN_PROMPT_ORDER=(
   time
   dir
-  # nvm
+  nvm
   git
 )
 BULLETTRAIN_NVM_FG="red"
@@ -65,6 +64,7 @@ if [ -f /Users/stylzz/.tnsrc ]; then
 fi
 ###-tns-completion-end-###
 
+<<<<<<< HEAD
 ###-tns-completion-start-###
 if [ -f /Users/eric/.tnsrc ]; then 
     source /Users/eric/.tnsrc 
@@ -74,3 +74,13 @@ fi
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+=======
+# dotnet tools / ef
+export PATH="$PATH:/Users/stylzz/.dotnet/tools"
+
+#nvm stuff
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  
+>>>>>>> 8a9368ce49a256a7ea47664cbc743311a39a0c3c
