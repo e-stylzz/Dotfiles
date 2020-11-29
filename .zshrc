@@ -14,6 +14,10 @@ export ZSH=$HOME/.oh-my-zsh
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export ANDROID_HOME=/usr/local/share/android-sdk
 
+#Flutter
+export PATH="$PATH:/usr/local/bin/flutter/flutter/bin"
+
+
 # Path for NPM - Reactive Native step
 # export PATH="/usr/local/share/npm/bin:$PATH"
 
@@ -66,3 +70,7 @@ if [ -f /Users/eric/.tnsrc ]; then
     source /Users/eric/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
